@@ -10,7 +10,7 @@ export async function getWombleWithTrait(id) {
     .join('traits', 'wombles.trait_id', 'traits.id')
     .select('wombles.id', 'name', 'description')
     .where('wombles.id', id)
-
+  
   return result
 }
 
